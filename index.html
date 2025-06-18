@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poncio's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body id="home">
+    <div class="navbar-cont">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#home"><img class="logo" src="src/toby_logo.png"></a>
+                <a href="#home"><span class="navbar-name">Toby Poncio</span></a>
+            </div>
+            <div class="navbar-links">
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+        <div id="home-screen">
+            <div id="particles-js"></div>
+                <div class="title-cont">
+                    <h2>WEB DEVELOPER</h2>
+                    <div class="title">
+                        <span class="title-text">Toby Carl Poncio</span>
+                        <span class="cursor">&nbsp</span>
+                    </div>
+            
+                </div>
+        </div>
+
+        <div class="container">
+            <div class="scroll"><a href="#projects"><img class="down-arrow" src="src/down-arrow.png" id="projects"></a></div>
+            <div class="project-cont" >
+                <div class="project-title">
+                Projects
+                </div>
+            </div>
+            <div class="section-breaker">
+                &nbsp;
+            </div>
+            
+            <div class="featured-projects">
+                <div class="portfolio">
+                    <a href="https://github.com/tobycaps/portfolio.git"><img src="src/portfolio.png" alt="portfolio">
+                        <br><h2>Portfolio</h2></a>
+                </div>
+                <div class="budgy-web-card">
+                    <a href="https://github.com/tobycaps/budgy_application"><img src="src/budgy/login.png" alt="budgy">
+                        <br><h2>Budgeting Android Mobile Application</h2></a>
+                        <p class="description">Budgy is a mobile application that was designed effectively to budget and track the users’ spending.</p>
+                </div>
+                <div class="ecommerce-web-card">
+                    <a href="https://tobycaps.github.io/Bookstore/index.html"><img src="src/HalfyBooked.png" alt="ecommerce">
+                    <br><h2>Simulated E-commerce Website</h2></a>
+                    <p class="description">HalfyBooked is a simulated e-commerce website that allows users browse various books available.
+                </div>
+            </div>
+        
+            <div class="footer" id="contact">
+                <h1>Get in touch!</h1>
+                <p>I'm always open to new opportunities and interesting projects. Feel free to reach out!</p>
+                <div class="section-breaker">
+                    &nbsp;
+                </div>
+                    <div class="contact-cont">
+                        <div class="contact"><a href="mailto:ponciotobycarl@gmail.com"><img class = "icon" src="src/email.png"></a></div>ponciotobycarl@gmail.com
+                        <div class="contact"><a href="https://www.linkedin.com/in/toby-carl-poncio/"><img class="icon" src="src/linkedin.png"></a></div>Toby Carl Poncio
+                        <div class="contact"><img class="icon" src="src/phone.png"></div>09476281468
+                    </div>
+            </div>
+            <footer>
+                <p>Made by Toby Carl A. Poncio</p>
+            </footer>
+        </div>
+    <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
+    </script>
+
+        <!-- bg particles.js -->
+     <script src="particles.js"></script>
+     <script src="app.js"></script>
+</body>
+</html>
