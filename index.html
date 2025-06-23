@@ -20,77 +20,93 @@
             </div>
         </nav>
     </div>
-        <div id="home-screen">
-            <div id="particles-js"></div>
-            <div class="title-cont">
-                <h2>WEB DEVELOPER</h2>
-                <div class="title">
-                    <span class="title-text">Toby Carl Poncio</span>
-                    <span class="cursor">&nbsp</span>
+    <div id="home-screen">
+        <div id="particles-js"></div>
+        <div class="title-cont">
+            <h2>WEB DEVELOPER</h2>
+            <div class="title">
+                <span class="title-text">Toby Carl Poncio</span>
+                <span class="cursor">&nbsp</span>
+            </div>
+            <div class="down-arrow">
+                    <a href="#projects"><input type="image" id="down" src="src/down-arrow.png"></a>
                 </div>
-                <div class="down-arrow">
-                        <a href="#projects"><input type="image" id="down" src="src/down-arrow.png"></a>
-                    </div>
+        </div>
+    </div>
+    <div class="container" id="projects">
+      <span>$nbsp</span>
+        <div class="project-cont" >
+            <div class="project-title">
+            Projects
             </div>
         </div>
-        <div class="container" id="projects">
-            <div class="project-cont" >
-                <div class="project-title">
-                Projects
-                </div>
-            </div>
-            <div class="section-breaker">
-                &nbsp;
-            </div>
-            
-            <div class="featured-projects">
-                <div class="portfolio">
-                    <a href="https://github.com/tobycaps/portfolio.git"><img src="src/portfolio.png" alt="portfolio">
-                        <br><h2>Portfolio</h2></a>
-                </div>
-                <div class="budgy-web-card">
-                    <a href="https://github.com/tobycaps/budgy_application"><img src="src/budgy/login.png" alt="budgy">
-                        <br><h2>Budgeting Android Mobile Application</h2></a>
-                        <p class="description">Budgy is a mobile application that was designed effectively to budget and track the users’ spending.</p>
-                </div>
-                <div class="ecommerce-web-card">
-                    <a href="https://tobycaps.github.io/Bookstore/index.html"><img src="src/HalfyBooked.png" alt="ecommerce">
-                    <br><h2>Simulated E-commerce Website</h2></a>
-                    <p class="description">HalfyBooked is a simulated e-commerce website that allows users browse various books available.
-                </div>
-            </div>
-        
-            <div class="footer" id="contact">
-                <h1>Get in touch!</h1>
-                <p>I'm always open to new opportunities and interesting projects. Feel free to reach out!</p>
-                <div class="section-breaker">
-                    &nbsp;
-                </div>
-                    <div class="contact-cont">
-                        <div class="contact"><a href="mailto:ponciotobycarl@gmail.com"><img class = "icon" src="src/email.png"></a></div>ponciotobycarl@gmail.com
-                        <div class="contact"><a href="https://www.linkedin.com/in/toby-carl-poncio/"><img class="icon" src="src/linkedin.png"></a></div>Toby Carl Poncio
-                        <div class="contact"><img class="icon" src="src/phone.png"></div>09476281468
-                    </div>
-            </div>
-            <footer>
-                <p>Made by Toby Carl A. Poncio</p>
-            </footer>
+        <div class="section-breaker">
+            &nbsp;
         </div>
-    <script>
-        $(document).ready(function(){
-          $("a").on('click', function(event) {
-            if (this.hash !== "") {
-              event.preventDefault();
-              var hash = this.hash;
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-                window.location.hash = hash;
-              });
-            }
-          });
+        <div class="featured-projects">
+            <div class="portfolio">
+                <a href="https://github.com/tobycaps/portfolio.git"><img src="src/portfolio.png" alt="portfolio">
+                    <br><h2>Portfolio</h2></a>
+            </div>
+            <div class="budgy-web-card">
+                <a href="https://github.com/tobycaps/budgy_application"><img src="src/budgy/login.png" alt="budgy">
+                    <br><h2>Budgeting Android Mobile Application</h2></a>
+                    <p class="description">Budgy is a mobile application that was designed effectively to budget and track the users’ spending.</p>
+            </div>
+            <div class="ecommerce-web-card">
+                <a href="https://tobycaps.github.io/Bookstore/index.html"><img src="src/HalfyBooked.png" alt="ecommerce">
+                <br><h2>Simulated E-commerce Website</h2></a>
+                <p class="description">HalfyBooked is a simulated e-commerce website that allows users browse various books available.
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <!-- Contact Column -->
+        <div class="footer-col contact-col">
+          <div class="footer-title">Contact</div>
+          <div class="footer-contact-info">
+            <a href="mailto:ponciotobycarl@gmail.com">ponciotobycarl@gmail.com</a>
+          </div>
+          <div class="footer-phone">
+            09476281468
+          </div>
+        </div>
+        <!-- Connect Column -->
+        <div class="footer-col connect-col">
+          <div class="footer-title">Connect</div>
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/toby-carl-poncio/" target="_blank" class="footer-link">
+              <img class="footer-icon" src="src/linkedin.png" alt="LinkedIn"> LinkedIn
+            </a>
+            <a href="#" class="footer-link" download>
+              <img class="footer-icon" src="src/resume.png"> Resume
+            </a>
+          </div>
+        </div>
+        <!-- Copyright Column -->
+        <div class="footer-col copyright-col">
+          <div class="footer-tag">@2025 TOBY PONCIO</div>
+        </div>
+      </div>
+    </footer>
+
+<!-- Button Scroll -->
+<script>
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+    if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+        scrollTop: $(hash).offset().top
+        }, 800, function(){
+        window.location.hash = hash;
         });
-    </script>
+    }
+    });
+});
+</script>
 
         <!-- bg particles.js -->
      <script src="particles.js"></script>
