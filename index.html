@@ -33,8 +33,8 @@
                 </div>
         </div>
     </div>
-    <div class="container" id="projects">
-      <span>$nbsp</span>
+    <span id="projects">&nbsp</span>
+    <div class="container">
         <div class="project-cont" >
             <div class="project-title">
             Projects
@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-    <footer class="site-footer">
+    <footer class="site-footer" id="contact">
       <div class="footer-columns">
         <!-- Contact Column -->
         <div class="footer-col contact-col">
@@ -80,7 +80,7 @@
               <img class="footer-icon" src="src/linkedin.png" alt="LinkedIn"> LinkedIn
             </a>
             <a href="#" class="footer-link" download>
-              <img class="footer-icon" src="src/resume.png"> Resume
+              <img class="footer-icon" src="src/resume.png" alt="📄"> Resume
             </a>
           </div>
         </div>
@@ -91,25 +91,8 @@
       </div>
     </footer>
 
-<!-- Button Scroll -->
-<script>
-$(document).ready(function(){
-    $("a").on('click', function(event) {
-    if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-        scrollTop: $(hash).offset().top
-        }, 800, function(){
-        window.location.hash = hash;
-        });
-    }
-    });
-});
-</script>
-
-        <!-- bg particles.js -->
-     <script src="particles.js"></script>
-     <script src="app.js"></script>
+    <!-- bg particles.js -->
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
