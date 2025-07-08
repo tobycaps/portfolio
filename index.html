@@ -1,98 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poncio's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poncio's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body id="home">
-    <div class="navbar-cont">
-        <nav class="navbar">
-            <div class="navbar-brand">
-                <a href="#home"><img class="logo" src="src/toby_logo.png"></a>
-                <a href="#home"><span class="navbar-name">Toby Poncio</span></a>
-            </div>
-            <div class="navbar-links">
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
+  <div class="navbar-cont">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="#home"><img class="logo" src="src/toby_logo.png"></a>
+        <a href="#home"><span class="navbar-name">Toby Poncio</span></a>
+      </div>
+      <div class="navbar-links">
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+  <div id="home-screen">
+    <div id="particles-js"></div>
+    <div class="title-cont">
+      <h2>WEB DEVELOPER</h2>
+      <div class="title">
+        <span class="title-text">Toby Carl Poncio</span>
+        <span class="cursor">&nbsp</span>
+      </div>
+      [Work in Progress]
+      <div class="down-arrow">
+        <a href="#projects"><input type="image" id="down" src="src/down-arrow.png"></a>
+      </div>
     </div>
-    <div id="home-screen">
-        <div id="particles-js"></div>
-        <div class="title-cont">
-            <h2>WEB DEVELOPER</h2>
-            <div class="title">
-                <span class="title-text">Toby Carl Poncio</span>
-                <span class="cursor">&nbsp</span>
-            </div>
-            <div class="down-arrow">
-                    <a href="#projects"><input type="image" id="down" src="src/down-arrow.png"></a>
-                </div>
-        </div>
+  </div>
+  <span id="projects">&nbsp</span>
+  <div class="container">
+    <div class="project-cont">
+      <div class="project-title">
+        Projects
+      </div>
     </div>
-    <span id="projects">&nbsp</span>
-    <div class="container">
-        <div class="project-cont" >
-            <div class="project-title">
-            Projects
-            </div>
-        </div>
-        <div class="section-breaker">
-            &nbsp;
-        </div>
-        <div class="featured-projects">
-            <div class="portfolio">
-                <a href="https://github.com/tobycaps/portfolio.git"><img src="src/portfolio.png" alt="portfolio">
-                    <br><h2>Portfolio</h2></a>
-            </div>
-            <div class="budgy-web-card">
-                <a href="https://github.com/tobycaps/budgy_application"><img src="src/budgy/login.png" alt="budgy">
-                    <br><h2>Budgeting Android Mobile Application</h2></a>
-                    <p class="description">Budgy is a mobile application that was designed effectively to budget and track the users’ spending.</p>
-            </div>
-            <div class="ecommerce-web-card">
-                <a href="https://tobycaps.github.io/Bookstore/index.html"><img src="src/HalfyBooked.png" alt="ecommerce">
-                <br><h2>Simulated E-commerce Website</h2></a>
-                <p class="description">HalfyBooked is a simulated e-commerce website that allows users browse various books available.
-            </div>
-        </div>
+    <p>[Takes you to github code for now. Will be updated to link to the actual project once deployed]</p>
+    <div class="section-breaker">
+      &nbsp;
     </div>
-    <footer class="site-footer" id="contact">
-      <div class="footer-columns">
-        <!-- Contact Column -->
-        <div class="footer-col contact-col">
-          <div class="footer-title">Contact</div>
-          <div class="footer-contact-info">
-            <a href="mailto:ponciotobycarl@gmail.com">ponciotobycarl@gmail.com</a>
-          </div>
-          <div class="footer-phone">
-            09476281468
-          </div>
+    <!-- subject to change with other updated projects -->
+    <div class="featured-projects">
+      <div class="portfolio">
+        <a href="https://github.com/tobycaps/portfolio.git"><img src="src/portfolio.png" alt="portfolio">
+          <br>
+          <h2>Portfolio</h2>
+        </a>
+      </div>
+      <div class="budgy-web-card">
+        <a href="https://github.com/tobycaps/budgy_application"><img src="src/budgy/login.png" alt="budgy">
+          <br>
+          <h2>Budgeting Android Mobile Application</h2>
+        </a>
+        <p class="description">Budgy is a mobile application that was designed effectively to budget and track the
+          users’ spending.</p>
+      </div>
+      <div class="ecommerce-web-card">
+        <a href="https://tobycaps.github.io/Bookstore/index.html"><img src="src/HalfyBooked.png" alt="ecommerce">
+          <br>
+          <h2>Simulated E-commerce Website</h2>
+        </a>
+        <p class="description">HalfyBooked is a simulated e-commerce website that allows users browse various books
+          available.
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer" id="contact">
+    <div class="footer-columns">
+      <!-- Contact Column -->
+      <div class="footer-col contact-col">
+        <div class="footer-title">Contact</div>
+        <div class="footer-contact-info">
+          <a href="mailto:ponciotobycarl@gmail.com">ponciotobycarl@gmail.com</a>
         </div>
-        <!-- Connect Column -->
-        <div class="footer-col connect-col">
-          <div class="footer-title">Connect</div>
-          <div class="footer-links">
-            <a href="https://www.linkedin.com/in/toby-carl-poncio/" target="_blank" class="footer-link">
-              <img class="footer-icon" src="src/linkedin.png" alt="LinkedIn"> LinkedIn
-            </a>
-            <a href="#" class="footer-link" download>
-              <img class="footer-icon" src="src/resume.png" alt="📄"> Resume
-            </a>
-          </div>
-        </div>
-        <!-- Copyright Column -->
-        <div class="footer-col copyright-col">
-          <div class="footer-tag">@2025 TOBY PONCIO</div>
+        <div class="footer-phone">
+          09476281468
         </div>
       </div>
-    </footer>
+      <!-- Connect Column -->
+      <div class="footer-col connect-col">
+        <div class="footer-title">Connect</div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/toby-carl-poncio/" target="_blank" class="footer-link">
+            <img class="footer-icon" src="src/linkedin.png" alt="LinkedIn"> LinkedIn
+          </a>
+          <a href="#" class="footer-link" download>
+            <img class="footer-icon" src="src/resume.png" alt="📄"> Resume
+          </a>
+        </div>
+      </div>
+      <!-- Copyright Column -->
+      <div class="footer-col copyright-col">
+        <div class="footer-tag">@2025 TOBY PONCIO</div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- bg particles.js -->
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+  <!-- bg particles.js -->
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
